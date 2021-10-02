@@ -1,0 +1,14 @@
+body {
+    background-color:rgb(178, 188, 197);
+}
+
+h3 {
+    color:rgb(68, 68, 224)
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.main-container {
+    text-align: center;
+}
