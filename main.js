@@ -5,7 +5,7 @@ var mainContainer = document.querySelector('.main-container');
 
 var timerEl = document.querySelector('#timer');
 
-var countDown =5;
+var countDown =60;
 
 
 
