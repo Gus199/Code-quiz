@@ -3,11 +3,26 @@ var resultsContainer = document.getElementById('results');
 var startButton = document.getElementById('start');
 var mainContainer = document.querySelector('.main-container');
 
+var timerEl = document.querySelector('#timer');
+
+var countDown =5;
+
 
 
 
 function starstartQuiz(){
-    startButton.addEventListener("click", question);
+    startButton.addEventListener("click",()=>{
+        setInterval(timerQuiz, 1000);
+        question();
+    });
+}
+function timerQuiz(){
+countDown--;
+timerEl.innerHTML =countDown;
+if(countDown<=0){
+    clearInterval(timerQuiz);
+    timerEl.innerHTML = 0;
+}
 }
 
 function question(e){
